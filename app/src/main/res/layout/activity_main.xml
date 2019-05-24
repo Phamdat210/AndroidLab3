@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:textSize="20dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="20dp"
+        android:layout_below="@+id/tvSignIn"/>
+
+    <EditText
+        android:id="@+id/edUser"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSignIn"
+        android:layout_toRightOf="@+id/tvUsername"/>
+
+    <TextView
+        android:id="@+id/tvPassword"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="20dp"
+        android:layout_below="@+id/edUser"/>
+
+    <EditText
+        android:id="@+id/edPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_below="@+id/edUser"
+        android:layout_toRightOf="@+id/tvPassword"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/edPass"/>
+
+</RelativeLayout>

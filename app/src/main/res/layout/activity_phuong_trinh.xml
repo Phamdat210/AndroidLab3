@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".PhuongTrinhActivity">
+
+    <TextView
+        android:id="@+id/tvQuadraticEquation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:text="Quadratic equation"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edNumberOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Number 1"
+        android:inputType="numberSigned"
+        android:layout_below="@+id/tvQuadraticEquation"/>
+
+    <EditText
+        android:id="@+id/edNumberTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Number 2"
+        android:inputType="numberSigned"
+        android:layout_below="@+id/edNumberOne"/>
+
+    <EditText
+        android:id="@+id/edNumberThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Number 3"
+        android:inputType="numberSigned"
+        android:layout_below="@+id/edNumberTwo"/>
+
+    <Button
+        android:id="@+id/btnResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Result"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:onClick="btnBackPT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Back"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btnResult"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>
